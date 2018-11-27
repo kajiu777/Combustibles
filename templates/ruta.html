@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ruta</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+        body {
+            background-color: rgb(0, 255, 128);
+        }
+        </style>
+</head>
+<body >
+        <div class="jumbotron text-center">
+                <h1>Prediccion de Combustible por Aprendizaje automatico</h1>
+                <p>Predcion de precios del año 2019 de los Combustibles en Mexico</p> 
+              </div>
+    
+
+    <form action="" method="post">
+        <p>
+
+            <label for="Mes">Eliga el Mes</label>
+            <select name="mes" class="form-control">
+                <option value="0">Enero</option>
+                <option value="1">Febrero</option>
+                <option value="2">Marzo</option>
+                <option value="3">Abril</option>
+                <option value="4">Mayo</option>
+                <option value="5">Junio</option>
+                <option value="6">Julio</option>
+                <option value="7">Agosto</option>
+                <option value="8">Septiembre</option>
+                <option value="9">octubre</option>
+                <option value="10">Noviembre</option>
+                <option value="11">Diciembre</option>
+
+            </select>
+        </p>
+        <p>
+            <label for="estado">Eliga el Estado</label>
+            <select name="estado" class="form-control">
+                    <option value="0">Aguascalientes</option>
+                    <option value="1">Baja California</option>
+                    <option value="2">Baja California Sur</option>
+                    <option value="3">Campeche</option>
+                    <option value="4">Chiapas</option>
+                    <option value="5">Chihuahua</option>
+                    <option value="6">Ciudad de Mexico</option>
+                    <option value="7">Coahuila de Zaragoza</option>
+                    <option value="8">Colima</option>
+                    <option value="9">Durango</option>
+                    <option value="10">Guanajuato</option>
+                    <option value="11">Guerrero</option>
+                    <option value="12">Hidalgo</option>
+                    <option value="13">Jalisco</option>
+                    <option value="14">Mexico</option>
+                    <option value="15">Michoacan de Ocampo</option>
+                    <option value="16">Morelos</option>
+                    <option value="17">Nayarit</option>
+                    <option value="18">Nuevo Leon</option>
+                    <option value="19">Oaxaca</option>
+                    <option value="20">Puebla</option>
+                    <option value="21">Queretaro</option>
+                    <option value="22">Quintana Roo</option>
+                    <option value="23">San Luis Potosi</option>
+                    <option value="24">Sinaloa</option>
+                    <option value="25">Sonora</option>
+                    <option value="26">Tabasco</option>
+                    <option value="27">Tamaulipas</option>
+                    <option value="28">Tlaxcala</option>
+                    <option value="29">Veracruz de Ignacio de la Llave</option>
+                    <option value="30">Yucatan</option>
+                    <option value="31">Zacatecas</option>
+            </select>
+        </p>
+        <p>
+            <label>Tipo de combustible:</label>
+            <select name="tipo_combustible">
+                <option class="Diesel">Diesel</option>
+                <option class="Premium">Premium</option>
+                <option class="Magna">Magna</option>
+            </select>
+        </p>
+        
+    </form>
+    <label>Ver la base de datos del precio historico de la gasolina</label>
+
+    <input class="boton" type="submit" value="Datos Historicos de los precios anteriores" name="Datos Historicos" onclick="location.href='http://127.0.0.1:8000/base'">
+</body>
+</html>
